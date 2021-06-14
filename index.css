@@ -14,7 +14,7 @@
 body {
     height: 100vh;
     width: 100%;
-    background: var(--primary) url(images/bg-desktop.svg);
+    background: var(--primary) url(bg-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Open sans',sans-serif;
@@ -98,7 +98,7 @@ span.icon {
 
 @media (max-width: 375px) {
     body {
-        background: var(--primary) url(images/bg-mobile.svg);
+        background: var(--primary) url(bg-mobile.svg);
         background-repeat: no-repeat;
         background-size: contain;
         height: 100vh;
