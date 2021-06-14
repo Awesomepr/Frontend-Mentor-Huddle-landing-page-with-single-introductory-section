@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500&display=swap');
+
+:root {
+    --primary: hsl(257, 40%, 49%);
+    --secondary: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background: var(--primary) url(images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open sans',sans-serif;
+}
+header.header {
+    height: 10vh;
+    width: 100%;
+    padding: 0 50px;
+}
+section.main {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+header .logo img {
+    height: 100px;
+    width: 150px;
+}
+.banner img {
+    height: 70%;
+    width: 100%;
+}
+section.banner {
+    width: 50vw;
+    height: 67vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+section.content {
+    width: 50vw;
+    padding: 20px;
+}
+section.content h1 {
+    margin-bottom: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+section.content p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+section.content .button {
+    text-decoration: none;
+    background: #FFFFFF;
+    color: var(--primary);
+    padding: 10px 50px;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    margin-top: 10px;
+    box-shadow: #ffffff94 1px 1px 5px;
+    display: inline-block;
+}
+section.content .button:hover {
+    background: var(--secondary);
+    color: #ffffff;
+    box-shadow: none;
+}
+footer {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 45px;
+}
+.icon img {
+    height: 15px;
+    width: 15px;
+    filter: invert(1);
+    margin: 8px;
+}
+span.icon {
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    
+}
+
+@media (max-width: 375px) {
+    body {
+        background: var(--primary) url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100vh;
+        width: 100%;
+    }
+    .banner img {
+        width: 100%;
+        height: 85%;
+    }
+    section.main {
+        flex-direction: column;
+    }
+    header .logo img {
+        height: 80px;
+        width: 100px;
+    }
+    header.header,section.main {
+        padding: 15px;
+    }
+    section.banner ,section.content{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    header {
+        height: 5vh;
+        display: flex;
+        align-items: center;
+    }
+    footer {
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+    }
+}
+
+
+
+
+
+
